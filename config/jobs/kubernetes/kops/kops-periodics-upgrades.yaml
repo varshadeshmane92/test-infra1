@@ -36,21 +36,15 @@ periodics:
         value: "1.33"
       - name: K8S_VERSION_B
         value: "v1.33.7"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-c290ad7a05-61fef.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -112,21 +106,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-159f354340-094ba.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -182,21 +170,15 @@ periodics:
         value: "1.34"
       - name: K8S_VERSION_B
         value: "v1.34.3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-e3e70cb9ae-d4b05.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -258,21 +240,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-d362539f05-99666.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -328,21 +304,15 @@ periodics:
         value: "1.34"
       - name: K8S_VERSION_B
         value: "v1.34.3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-053a6da8d2-9e90b.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -404,21 +374,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-a6d4ef4a40-ecaea.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -474,21 +438,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.29.15"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-c3e84d14f4-f7707.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -550,21 +508,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-5b2875186d-51c2a.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -620,21 +572,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.30.14"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-31712ce5e8-7494b.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -696,21 +642,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-1f7ca43ad0-4b42a.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -766,21 +706,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.31.14"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-8f3ff4d768-40a18.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -842,21 +776,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-0ef916a1dd-657bb.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -912,21 +840,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.32.11"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-95ffe526ca-831ac.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -988,21 +910,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-3b146e5437-400c9.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -1058,21 +974,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.30.14"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-cd8104c551-5b9b0.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -1134,21 +1044,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-cca2202980-91f93.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -1204,21 +1108,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.31.14"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-b70da7cab9-10530.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -1280,21 +1178,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-5a92659de1-c35ea.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -1350,21 +1242,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.32.11"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-ececc0a3bc-ced07.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -1426,21 +1312,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-4f779fcfd7-9e12f.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -1496,21 +1376,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.33.7"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-db95933873-88418.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -1572,21 +1446,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-2274b9c861-9485d.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -1642,21 +1510,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.31.14"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-bb10282117-5cfe6.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -1718,21 +1580,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-aa4f60f3b4-87067.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -1788,21 +1644,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.32.11"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-296bf0e7cc-a1d87.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -1864,21 +1714,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-c6daea1850-34fd2.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -1934,21 +1778,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.33.7"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-862e062f13-83206.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -2010,21 +1848,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-c67ff0a59a-f93d1.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -2080,21 +1912,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.34.3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-f8712e8f12-5fef1.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -2156,21 +1982,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-9ad43afc3b-62f96.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -2226,21 +2046,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "latest"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-fb1bc2f297-ec85b.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -2302,21 +2116,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-7f600f479c-e9240.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -2372,21 +2180,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.34.0"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-aa7241c694-63b0b.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -2448,21 +2250,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-6c3c501760-7742e.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -2518,21 +2314,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.33.0"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-e3dfda502e-417f3.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -2594,21 +2384,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-58ca2db60d-d8190.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -2664,21 +2448,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.32.0"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-e95730508f-1fa2d.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -2740,21 +2518,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-21d1afcace-fafba.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -2810,21 +2582,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.31.0"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-939dabf48e-85962.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -2886,21 +2652,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-a2492dc0ba-873f6.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -2956,21 +2716,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "v1.30.0"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-cd416be34a-407d2.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -3032,21 +2786,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-6097540672-d838f.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -3102,21 +2850,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "latest"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-3a5daf4e9a-96255.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -3178,21 +2920,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-734077b544-64c63.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -3248,21 +2984,15 @@ periodics:
         value: "latest"
       - name: K8S_VERSION_B
         value: "ci"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-ed4da97961-6b857.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
@@ -3324,21 +3054,15 @@ periodics:
         value: "tests/e2e/templates/many-addons.yaml.tmpl"
       - name: KOPS_CONTROL_PLANE_SIZE
         value: "3"
-      - name: KOPS_STATE_STORE
-        value: "s3://k8s-kops-ci-prow-state-store"
       - name: KOPS_DNS_DOMAIN
         value: "tests-kops-aws.k8s.io"
-      - name: DISCOVERY_STORE
-        value: "s3://k8s-kops-ci-prow"
       - name: CLOUD_PROVIDER
         value: "aws"
-      - name: CLUSTER_NAME
-        value: "e2e-9b8b75964a-36844.tests-kops-aws.k8s.io"
       - name: KUBE_SSH_USER
         value: "ubuntu"
       - name: KOPS_IRSA
         value: "true"
-      image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20260108-6ef4f0b08f-master
+      image: us-central1-docker.pkg.dev/k8s-staging-test-infra/images/kubekins-e2e:v20260127-c1affcc8de-master
       imagePullPolicy: Always
       resources:
         limits:
